@@ -1,0 +1,139 @@
+.system {
+    background-color: rgb(174, 174, 174);
+    min-height: 900px;
+    padding-top: 50px;
+    .search-system {
+        position: relative;
+        background: #FFFFFF;
+        border-radius: 20px;
+        padding: 25px;
+        .search-system_field {
+            display: flex;
+            .search {
+                background: #F2F4F8;
+                border-radius: 12px;
+                width: 642px;
+                padding: 20px 40px 20px 50px;
+                font-weight: 500;
+                font-size: 20px;
+                color: #000000;
+                border: none;
+                outline: none;
+            }
+            .search::-ms-clear {
+                width: 0;
+                height: 0;
+            }
+            .search__form {
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    background-image: url('../img/searchicon.svg');
+                    top: 19px;
+                    left: 15px;
+                }
+            }
+            .categories {
+                position: relative;
+                width: 250px;
+                cursor: pointer;
+                padding: 18px;
+                border: 2px solid #F2F4F8;
+                border-radius: 12px;
+                font-weight: 500;
+                font-size: 20px;
+                color: #000000;
+                margin-left: 15px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 20px;
+                    height: 10px;
+                    right: 21px;
+                    top: 26px;
+                    background-image: url('../img/Caret.svg');
+                }
+            }
+        }
+    }
+}
+
+.search__btn {
+    padding: 18px;
+    background: #000000;
+    border-radius: 12px;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.categories__dropdown-list {
+    display: none;
+    position: absolute;
+    right: 117px;
+    bottom: -210px;
+    background: #fff;
+    border: 2px solid #f2f4f8;
+    border-radius: 12px;
+    width: 286px;
+    .category {
+        padding: 12px 13px;
+        display: flex;
+        border-bottom: 1px solid #e6e8ec;
+    }
+}
+
+.checkbox {
+    margin-right: 10px;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 4px;
+    appearance: none;
+    outline: 0;
+    cursor: pointer;
+    &:checked {
+        background-image: url('../img/Check box - active.svg');
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.search__categories {
+    display: flex;
+}
+
+.dropdown-list {
+    position: relative;
+}
+
+.search__category {
+    display: flex;
+    margin-top: 30px;
+    border: 2px solid #E8EAEE;
+    border-radius: 4px;
+    padding: 8px 12px;
+    display: none;
+    margin-right: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    &.show {
+        display: flex;
+    }
+    &-icon {
+        width: 10px;
+        height: 10px;
+        margin-left: 15px;
+        margin-top: 4px;
+        cursor: pointer;
+    }
+}
