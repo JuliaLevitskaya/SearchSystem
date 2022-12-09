@@ -5,13 +5,14 @@ const closeicons = document.querySelectorAll('.search__category-icon');
 const search = document.querySelector('.search__btn')
 const all = document.querySelector('.all');
 const music = document.querySelector('.music');
-const netflix = document.querySelector('.netflix');
+const netflix = document.querySelector('.Articles');
 const interviews = document.querySelector('.interviews');
+const photography = document.querySelector('.photography');
 
 const searchCategory1 = document.querySelector('.search__category[data-id="interviews"]');
 const searchCategory2 = document.querySelector('.search__category[data-id="all"]');
 const searchCategory3 = document.querySelector('.search__category[data-id="music"]');
-const searchCategory4 = document.querySelector('.search__category[data-id="netflix"]');
+const searchCategory4 = document.querySelector('.search__category[data-id="Articles"]');
 
 categories.addEventListener("click", function() {
     dropdown.classList.toggle('show');
@@ -41,7 +42,15 @@ netflix.addEventListener("click", function() {
     searchCategory4.classList.toggle('show');
 });
 
-
 video.addEventListener("click", function() {
     interviews.classList.toggle('show');
+});
+
+music.addEventListener("click", function() {
+    photography.classList.toggle('show');
+});
+
+all.addEventListener("click", function() {
+    interviews.classList.toggle('show');
+    photography.classList.toggle('show');
 });

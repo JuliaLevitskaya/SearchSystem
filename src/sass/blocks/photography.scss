@@ -1,0 +1,50 @@
+.photography__field {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    .photography__nickname {
+        font-weight: 500;
+        font-size: 24px;
+        color: #000000;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .photography__email {
+        font-weight: 400;
+        font-size: 16px;
+        color: #999FAA;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+    img {
+        cursor: pointer;
+    }
+}
+
+.photography__footer {
+    display: flex;
+    justify-content: space-between;
+    .results {
+        position: relative;
+        font-weight: 500;
+        font-size: 16px;
+        text-decoration-line: underline;
+        color: #000000;
+        margin-right: 80px;
+        cursor: pointer;
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url('../img/Arrow 1 (Stroke).svg');
+            height: 12px;
+            width: 14px;
+            right: -27px;
+            top: 4px;
+        }
+    }
+}
+
+.photography {
+    display: none;
+}
