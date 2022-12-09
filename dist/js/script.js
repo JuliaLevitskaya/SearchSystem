@@ -2,9 +2,11 @@ const categories = document.querySelector('.categories');
 const dropdown = document.querySelector('.categories__dropdown-list');
 const video = document.querySelector('.video');
 const closeicons = document.querySelectorAll('.search__category-icon');
+const search = document.querySelector('.search__btn')
 const all = document.querySelector('.all');
 const music = document.querySelector('.music');
 const netflix = document.querySelector('.netflix');
+const interviews = document.querySelector('.interviews');
 
 const searchCategory1 = document.querySelector('.search__category[data-id="interviews"]');
 const searchCategory2 = document.querySelector('.search__category[data-id="all"]');
@@ -37,4 +39,9 @@ music.addEventListener("click", function() {
 });
 netflix.addEventListener("click", function() {
     searchCategory4.classList.toggle('show');
+});
+
+
+video.addEventListener("click", function() {
+    interviews.classList.toggle('show');
 });
