@@ -5,9 +5,10 @@ const closeicons = document.querySelectorAll('.search__category-icon');
 const search = document.querySelector('.search__btn')
 const all = document.querySelector('.all');
 const music = document.querySelector('.music');
-const netflix = document.querySelector('.Articles');
+const article = document.querySelector('.Articles');
 const interviews = document.querySelector('.interviews');
 const photography = document.querySelector('.photography');
+const articles = document.querySelector('.articles');
 
 const searchCategory1 = document.querySelector('.search__category[data-id="interviews"]');
 const searchCategory2 = document.querySelector('.search__category[data-id="all"]');
@@ -38,7 +39,7 @@ all.addEventListener("click", function() {
 music.addEventListener("click", function() {
     searchCategory3.classList.toggle('show');
 });
-netflix.addEventListener("click", function() {
+article.addEventListener("click", function() {
     searchCategory4.classList.toggle('show');
 });
 
@@ -53,4 +54,9 @@ music.addEventListener("click", function() {
 all.addEventListener("click", function() {
     interviews.classList.toggle('show');
     photography.classList.toggle('show');
+    articles.classList.toggle('show');
+});
+
+article.addEventListener("click", function() {
+    articles.classList.toggle('show');
 });
